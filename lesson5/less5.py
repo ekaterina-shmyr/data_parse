@@ -62,7 +62,6 @@ while True:
         print('раскрытие страниц закончено')
         break
 
-
 goods = driver.find_elements_by_class_name('sale-card')
 for good in goods[:-3]:
     print(good.find_element_by_class_name('sale-card__title').text)
